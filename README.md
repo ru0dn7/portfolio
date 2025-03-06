@@ -1,30 +1,31 @@
 # WEB PORTFOLIO
-PC 전용 웹, 반응형 웹, react 프로젝트 입니다.<br>
-디자인부터 코딩까지 100% 기여하였습니다. <br>
+기업형 웹(PC), 반응형 웹, React SPA 웹앱 포트폴리오입니다.<br>
+기획 및 디자인부터 마크업(프로그래밍)까지 100% 기여하였습니다. <br>
 
-## 🔗 URL
-* 기업형 웹(커핀그루나루)
+## 🔗 PORTFOLIO URL
+* 기업형 웹 (커핀그루나루)
     + http://kkwoou.mycafe24.com/
-* 반응형 웹(Jeju Island)
+* 반응형 웹 (Jeju Island)
     + http://kkwoou.mycafe24.com/media/
-* React SPA(Korail)
-    + https://react-project-9360a.web.app/
+* React SPA (Korail)
+    + https://react-project-3c3bd.web.app/
 * 프로필 및 포트폴리오 링크
     + http://kkwoou.mycafe24.com/profile/
 
 
 ### ⚒️ SKILLS
 * HTML
-* CSS
-* JavaScript, jQuery, Ajax, Json, TypeScript
+* CSS(less/sass)
+* JavaScript(ES6), JQuery, TypeScript, (Ajax & Json)
 * React
-* php / My-SQL
-* fireBase (DataBase/Hosting)
-* Git / GitHub
-* 포토샵 / 일러스트 / Figma
+* PHP / My-SQL
+* Firebase(firestore database & hosting) 
+* Git & Github
+* Photoshop/Illustrator/Figma
 
 ### ⚠️ 웹 표준 / 웹 접근성
-* W3C 검사 만점 완료
+* W3C 마크업 검사 및 CSS 검사 완료
+* 웹 접근성검사 (K-WAH) 완료
 * 크로스브라우징 (크롬, 사파리, 엣지, 파이어폭스, 오페라) 테스트 완료
 * 시멘틱 마크업, 아웃라인 정돈
 * img tag(alt), a tag(title), table(scope, thead, tbody) 등 태그 속성을 활용해 접근성 향상
@@ -37,13 +38,4 @@ PC 전용 웹, 반응형 웹, react 프로젝트 입니다.<br>
 5. 자바스크립트, 제이쿼리를 사용하여 기존 사이트보다 인터렉티브한 UI 구현
 6. 글씨 명도가 낮아 가독성이 저하되는 점을 개선하여 명도대비 수치를 준수하여 포인트컬러 활용
 
-### 💡JavaScript 기능 구현
-1. JavaScript를 활용하여 mouseenter시 gnb 드롭다운 효과를 추가하고<br>
-    스크롤 다운시 헤더 레이아웃 변형
-2. JavaScript를 활용하여 탭메뉴, 아코디언 메뉴, 더 불러오기 기능 구현
-3. 반복 실행/재생/중지/다음-이전 버튼에 따른 이미지 슬라이드 기능 구현
-4. php include를 활용하여 header, footer 코드의 재사용성과 유지보수의 편의성을 높임
-5. JavaScript를 활용하여 index 페이지 스크롤 이벤트 적용 (서브페이지에선 aos 플러그인 활용)
-6. Ajax와 Json 활용하여 리스트 구현
-7. top버튼 클릭시 상단 이동
-8. 쿠키를 활용한 팝업 제어 (오늘은 이 창을 열지 않음)
+
