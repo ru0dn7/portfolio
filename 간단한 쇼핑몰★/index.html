@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>쇼핑몰 만들기</title>
+    <meta
+      name="description"
+      content="주니어 웹 퍼블리셔 포트폴리오용 반응형 e-commerce 데모"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- 폰트어썸 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </head>
+  <body data-page="home">
+    <header class="site-header" role="banner">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          <span class="logo" aria-hidden="true"></span>
+          <span>KW Shop</span>
+        </a>
+        <nav class="nav-links" aria-label="주요 메뉴">
+          <a href="index.html">홈</a>
+          <a href="products.html">상품</a>
+          <a class="cart-pill" href="cart.html" aria-label="장바구니">
+            <span>장바구니</span>
+            <span class="cart-count" id="cart-count">0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="container" tabindex="-1">
+      <section class="hero" aria-label="메인 배너">
+        <div class="swiper hero-swiper">
+          <div class="swiper-wrapper">
+            <!-- 첫 번째 슬라이드 -->
+            <div class="swiper-slide hero-slide hero-slide1">
+              <div class="hero-inner">
+                <div class="hero-content">
+                  <h1>심플하고 감각적인 스토어</h1>
+                  <p>
+                    반응형 레이아웃과 접근성을 고려한 UI로 구성된 포트폴리오
+                    샵입니다. 다양한 디바이스에서 깔끔하게 보이도록
+                    설계했습니다.
+                  </p>
+                  <div class="cta">
+                    <a class="btn btn-primary" href="products.html"
+                      >지금 둘러보기</a
+                    >
+                    <a class="btn" href="#featured">추천 상품</a>
+                  </div>
+                </div>
+            
+              </div>
+            </div>
+
+            <!-- 두 번째 슬라이드 -->
+            <div class="swiper-slide hero-slide hero-slide2">
+              <div class="hero-inner">
+                <div class="hero-content">
+                  <h1>최신 트렌드의 시작</h1>
+                  <p>
+                    엄선된 브랜드와 고품질 제품들로 구성된 컬렉션을 만나보세요.
+                    당신만의 스타일을 완성할 수 있습니다.
+                  </p>
+                  <div class="cta">
+                    <a class="btn btn-primary" href="products.html"
+                      >컬렉션 보기</a
+                    >
+                    <a class="btn" href="#featured">인기 상품</a>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <!-- 세 번째 슬라이드 -->
+            <div class="swiper-slide hero-slide hero-slide3">
+              <div class="hero-inner">
+                <div class="hero-content">
+                  <h1>특별한 쇼핑 경험</h1>
+                  <p>
+                    빠른 배송과 친절한 고객 서비스로 최고의 쇼핑 경험을
+                    제공합니다. 지금 바로 시작해보세요.
+                  </p>
+                  <div class="cta">
+                    <a class="btn btn-primary" href="products.html"
+                      >쇼핑 시작</a
+                    >
+                    <a class="btn" href="#featured">신상품</a>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+
+          <!-- Swiper 네비게이션 -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+
+          <!-- Swiper 페이지네이션 -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- 카테고리 -->
+      <section aria-labelledby="category-title">
+        <h2 id="category-title" class="section-title">카테고리</h2>
+        <div class="grid cols-4" id="category-grid"></div>
+      </section>
+
+      <!-- 추천상품 -->
+      <section id="featured" aria-labelledby="featured-title">
+        <h2 id="featured-title" class="section-title">추천 상품</h2>
+        <div class="grid cols-4" id="featured-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2025 · 반응형 쇼핑몰 만들기</div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

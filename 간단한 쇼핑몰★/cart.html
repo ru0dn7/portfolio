@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>장바구니</title>
+    <meta name="description" content="장바구니 페이지">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body data-page="cart">
+    <header class="site-header" role="banner">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          <span class="logo" aria-hidden="true"></span>
+          <span>KW Shop</span>
+        </a>
+        <nav class="nav-links" aria-label="주요 메뉴">
+          <a href="index.html">홈</a>
+          <a href="products.html">상품</a>
+          <a class="cart-pill" href="cart.html" aria-label="장바구니">
+            <span>장바구니</span>
+            <span class="cart-count" id="cart-count">0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1 class="section-title">장바구니</h1>
+      <p id="cart-empty" class="muted" hidden>장바구니가 비었습니다. <a href="products.html">상품 보러가기</a></p>
+
+      <section class="grid cols-2 stack stack-md">
+        <div>
+          <div id="cart-list" class="cart-list"></div>
+        </div>
+        <aside class="cart-summary " aria-labelledby="summary-title">
+          <h2 id="summary-title" class="summary-tit">주문 요약</h2>
+          <div class="total-price"><span>총 합계&nbsp;</span> <strong id="cart-total">0</strong>원</div>
+          <a id="to-checkout" class="btn-move btn btn-primary" href="checkout.html">결제하기로 이동</a>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2025  · 반응형 쇼핑몰 만들기</div>
+    </footer>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+  </html>
+
+
