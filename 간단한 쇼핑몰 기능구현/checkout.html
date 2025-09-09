@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>결제</title>
+    <meta name="description" content="결제 페이지">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body data-page="checkout">
+    <header class="site-header" role="banner">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          <span class="logo" aria-hidden="true"></span>
+          <span>KW Shop</span>
+        </a>
+        <nav class="nav-links" aria-label="주요 메뉴">
+          <a href="index.html">홈</a>
+          <a href="products.html">상품</a>
+          <a class="cart-pill" href="cart.html" aria-label="장바구니">
+            <span>장바구니</span>
+            <span class="cart-count" id="cart-count">0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1 class="section-title">결제</h1>
+      <div class="checkout-grid">
+        <section class="form" aria-labelledby="pay-title">
+          <h2 id="pay-title">결제 정보</h2>
+          <form id="payment-form">
+            <div class="field">
+              <label for="name">이름</label>
+              <input id="name" class="input" type="text" data-required="true" autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="email">이메일</label>
+              <input id="email" class="input" type="email" data-required="true" autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="address">주소</label>
+              <input id="address" class="input" type="text" data-required="true" autocomplete="street-address">
+            </div>
+            <div class="grid cols-2">
+              <div class="field">
+                <label for="card">카드 번호</label>
+                <input id="card" class="input" type="text" inputmode="numeric" placeholder="4242 4242 4242 4242" data-required="true">
+                <div class="help">데모 페이지로 실제 결제는 이루어지지 않습니다.</div>
+              </div>
+              <div class="field">
+                <label for="expiry">유효기간</label>
+                <input id="expiry" class="input" type="text" placeholder="MM/YY" data-required="true">
+              </div>
+            </div>
+            <div class="grid cols-2">
+              <div class="field">
+                <label for="cvc">CVC</label>
+                <input id="cvc" class="input" type="text" inputmode="numeric" placeholder="123" data-required="true">
+              </div>
+              <div class="field">
+                <label for="memo">요청사항</label>
+                <input id="memo" class="input" type="text" placeholder="선택 입력">
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit" style="margin-top: 20px;">주문하기</button>
+          </form>
+        </section>
+
+        <aside class="cart-summary" aria-labelledby="order-title">
+          <h2 id="order-title">주문 요약</h2>
+          <div id="order-summary"></div>
+          <div class="summary-row summary-total total-price"><span>총 합계&nbsp;</span> <span id="checkout-total"> 0 </span>원</div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2025  · 반응형 쇼핑몰 만들기</div>
+    </footer>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+  </html>
+
+

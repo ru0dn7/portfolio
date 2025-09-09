@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>상품</title>
+    <meta name="description" content="상품 목록 페이지">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body data-page="products">
+    <header class="site-header" role="banner">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          <span class="logo" aria-hidden="true"></span>
+          <span>KW Shop</span>
+        </a>
+        <nav class="nav-links" aria-label="주요 메뉴">
+          <a href="index.html">홈</a>
+          <a aria-current="page" href="products.html">상품</a>
+          <a class="cart-pill" href="cart.html" aria-label="장바구니">
+            <span>장바구니</span>
+            <span class="cart-count" id="cart-count">0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section aria-labelledby="filter-title">
+        <h1 id="filter-title" class="section-title">상품 목록</h1>
+        <div class="filters" role="search">
+          <label class="visually-hidden" for="search-input">검색</label>
+          <input id="search-input" class="input" type="search" placeholder="상품 이름 검색" aria-label="검색">
+          <label class="visually-hidden" for="category-select">카테고리</label>
+          <select id="category-select" class="select" aria-label="카테고리"></select>
+        </div>
+      </section>
+
+      <section aria-live="polite" aria-busy="false">
+        <div class="grid cols-4" id="products-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2025  · 반응형 쇼핑몰 만들기</div>
+    </footer>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+  </html>
+
+
