@@ -1,213 +1,231 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>펫프렌즈</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>펫프렌즈</title>
 
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
-    <!-- 폰트어썸 CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <header>
-      <h1>
-        <a href="index.html" class="logo">
-          <img src="./images/logo.png" alt="" />
-          <span class="hidden">펫프렌즈 로고</span>
-        </a>
-      </h1>
-      <div class="utility">
-        <a href="#" class="ico"
-          ><i class="fa-solid fa-magnifying-glass"></i
-          ><span class="hidden">search</span></a
-        >
-        <a href="#" class="log">로그인</a>
-        <a href="#" class="ico" id="btn_menu"
-          ><i class="fa-solid fa-bars"></i><span class="hidden">menu</span></a
-        >
-      </div>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/index.css" />
 
-      <!-- <nav>
+  <!-- 폰트어썸 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <h1>
+      <a href="index.html" class="logo">
+        <img src="./images/logo.png" alt="" />
+        <span class="hidden">펫프렌즈 로고</span>
+      </a>
+    </h1>
+    <div class="utility">
+      <a href="#" class="ico"><i class="fa-solid fa-magnifying-glass"></i><span class="hidden">search</span></a>
+      <a href="#" class="log">로그인</a>
+      <a href="#" class="ico" id="btn_menu"><i class="fa-solid fa-bars"></i><span class="hidden">menu</span></a>
+    </div>
+
+    <!-- <nav>
         <button class="btn_close"><span class="hidden">close</span></button>
       </nav> -->
-    </header>
-    <main>
-      <section class="visual">
-        <!-- Swiper -->
-        <div class="swiper visual-swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./images/visual1.jpg" alt="" />
-              <div class="slide-caption">
-                <p class="main-title">
-                  <span class="line1">
-                    반려동물 <span class="highlight">1등</span> 쇼핑몰
-                  </span>
-                  <span class="line2">
-                    <span class="highlight">펫프렌즈</span>
-                  </span>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <img src="./images/visual1.jpg" alt="" />
-              <div class="slide-caption">
-                <p class="main-title">
-                  <span class="line1">
-                    <span class="highlight">함께하는</span>일상에
-                  </span>
-                  <span class="line2">
-                    <span class="highlight">특별함</span>을 더하는<span
-                      class="highlight"
-                      >펫프렌즈</span
-                    >
-                  </span>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <img src="./images/visual1.jpg" alt="" />
-              <div class="slide-caption">
-                <p class="main-title"><span class="highlight">펫 라이프스타일</span>의 시작, 펫프렌즈</p>
-              </div>
+  </header>
+  <main>
+    <div class="visual">
+      <!-- Swiper -->
+      <div class="swiper visual-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/visual1.jpg" alt="" />
+            <div class="slide-caption">
+              <p class="main-title">
+                <span class="line1">
+                  반려동물 <span class="highlight">1등</span> 쇼핑몰
+                </span>
+                <span class="line2">
+                  <span class="highlight">펫프렌즈</span>
+                </span>
+              </p>
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </section>
 
-      <!-- community section -->
-      <section>
-        <h2>커뮤니티</h2>
-        <div class="swiper community-swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./images/1.png" alt=""></div>
-            <div class="swiper-slide"><img src="./images/2.png" alt=""></div>
-            <div class="swiper-slide"><img src="./images/3.png" alt=""></div>
-            <div class="swiper-slide"><img src="./images/4.png" alt=""></div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </section>
-
-      <section class="category">
-        <h2>카테고리</h2>
-        <div class="category-inner">
-          <ul>
-            <li class="on">사료</li>
-            <li>간식</li>
-            <li>용품</li>
-          </ul>
-          <div class="category-box on">
-            <img src="#none" alt="" style="background: #ccc; width: 340px; height: 340px;">
-            <div class="right-box">
-              <img src="#none" alt="" style="background: #ccc; height: 200px;">
-              <img src="#none" alt="" style="background: #ccc; height: 200px;">
-              <p class="tit">BTS TOUR IN SEOUL</p>
-              <p>이제는 성지가 되어버린 멤버들이 데뷔 전 갔던 식당부터 TRIPKO만의 스페셜 코스인 '하이브 사옥 투어' 등 유튜브</p>
+          <div class="swiper-slide">
+            <img src="./images/visual1.jpg" alt="" />
+            <div class="slide-caption">
+              <p class="main-title">
+                <span class="line1">
+                  <span class="highlight">함께하는</span>일상에
+                </span>
+                <span class="line2">
+                  <span class="highlight">특별함</span>을 더하는<span class="highlight">펫프렌즈</span>
+                </span>
+              </p>
             </div>
           </div>
-          <div class="category-box">
-            <img src="#none" alt="" style="background: #ccc; width: 340px; height: 340px;">
-            <div class="right-box">
-              <img src="#none" alt="" style="background: #ccc; height: 100px;">
-              <img src="#none" alt="" style="background: #ccc; height: 100px;">
-              <p class="tit">간식 베스트 TOP</p>
-              <p>우리 아이가 좋아하는 건강한 간식 모음. 기호성과 영양을 동시에 잡은 베스트셀러를 만나보세요.</p>
-            </div>
-          </div>
-          <div class="category-box">
-            <img src="#none" alt="" style="background: #ccc; width: 340px; height: 340px;">
-            <div class="right-box">
-              <img src="#none" alt="" style="background: #ccc; height: 100px;">
-              <img src="#none" alt="" style="background: #ccc; height: 100px;">
-              <p class="tit">반려동물 용품 추천</p>
-              <p>산책부터 실내생활까지 필수 용품을 한자리에. 프리미엄 하네스, 장난감, 배변용품 추천 리스트.</p>
+
+          <div class="swiper-slide">
+            <img src="./images/visual1.jpg" alt="" />
+            <div class="slide-caption">
+              <p class="main-title"><span class="highlight">펫 라이프스타일</span>의 시작, 펫프렌즈</p>
             </div>
           </div>
         </div>
-      </section>
-      <section>갤러리 9칸</section>
-      <div>배너</div>
-      <section>슬라이드 카드 후기</section>
-      <div>배너</div>
-      <section>모집공고</section>
-      <section style="height: 500px; background: #ccc">임시</section>
-    </main>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
 
-    <footer class="site-footer">
-      <div class="footer-inner">
-        <div class="footer-top">
-          <a href="index.html" class="footer-logo">
-            <img src="./images/logo.png" alt="펫프렌즈 로고" />
-          </a>
-          <ul class="footer-links">
-            <li><a href="#none">회사소개</a></li>
-            <li><a href="#none">이용약관</a></li>
-            <li><a href="#none">개인정보처리방침</a></li>
-            <li><a href="#none">이용안내</a></li>
-            <li><a href="#none">광고/제휴 문의</a></li>
-          </ul>
-          <div class="footer-social">
-            <a href="#none" aria-label="X"
-              ><i class="fa-brands fa-x-twitter"></i
-              ><span class="hidden">X</span></a
-            >
-            <a href="#none" aria-label="Instagram"
-              ><i class="fa-brands fa-instagram"></i
-              ><span class="hidden">Instagram</span></a
-            >
-            <a href="#none" aria-label="Facebook"
-              ><i class="fa-brands fa-facebook"></i
-              ><span class="hidden">Facebook</span></a
-            >
-            <a href="#none" aria-label="YouTube"
-              ><i class="fa-brands fa-youtube"></i
-              ><span class="hidden">YouTube</span></a
-            >
+    <!-- community section -->
+    <section>
+      <h2>커뮤니티</h2>
+      <div class="swiper community-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./images/1.png" alt=""></div>
+          <div class="swiper-slide"><img src="./images/2.png" alt=""></div>
+          <div class="swiper-slide"><img src="./images/3.png" alt=""></div>
+          <div class="swiper-slide"><img src="./images/4.png" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="category">
+      <h2>카테고리</h2>
+      <div class="category-inner">
+        <ul>
+          <li class="on">사료</li>
+          <li>간식</li>
+          <li>용품</li>
+        </ul>
+        <!-- 1번째 탭 -->
+        <div class="category-box on">
+          <img src="./images/cat01.png" alt="">
+          <div class="right-box">
+            <img src="./images/galley01.jpg" alt="">
+            <img src="./images/galley02.jpg" alt="">
+            <p class="tit">BTS TOUR IN SEOUL</p>
+            <p>이제는 성지가 되어버린 멤버들이 데뷔 전 갔던 식당부터 TRIPKO만의 스페셜 코스인 '하이브 사옥 투어' 등 유튜브</p>
           </div>
         </div>
-        <div class="footer-info">
-          <ul>
-            <li><strong>상호 : 펫프렌즈</strong></li>
-            <li><strong>대표 : 김경욱</strong></li>
-            <li><strong>메일 : ru0dn7@gmail.com</strong></li>
-            <li>
-              <strong>사업자등록번호 :</strong> 000-00-000
-              <a href="#" class="biz-lookup">사업자번호조회 &gt;</a>
-            </li>
-            <li><strong>통신판매업신고번호 :</strong> 00000000</li>
-            <li><strong>대표번호 :</strong> 0000-0000</li>
-            <li><strong>팩스번호 :</strong> 000-000-0000</li>
-            <li><strong>주소 : 서울시 강서구 </strong></li>
-          </ul>
-          <p class="copyright">Copyright © KKW</p>
+
+        <!-- 2번째 탭 -->
+        <div class="category-box">
+          <img src="./images/dog01.png" alt="">
+          <div class="right-box">
+            <img src="./images/galley02.jpg" alt="">
+            <img src="./images/galley01.jpg" alt="">
+            <p class="tit">간식 베스트 TOP</p>
+            <p>우리 아이가 좋아하는 건강한 간식 모음. 기호성과 영양을 동시에 잡은 베스트셀러를 만나보세요.</p>
+          </div>
+        </div>
+
+        <!-- 3번째 탭 -->
+        <div class="category-box">
+          <img src="./images/cat01.png" alt="">
+          <div class="right-box">
+            <img src="./images/galley01.jpg" alt="">
+            <img src="./images/galley02.jpg" alt="">
+            <p class="tit">반려동물 용품 추천</p>
+            <p>산책부터 실내생활까지 필수 용품을 한자리에. 프리미엄 하네스, 장난감, 배변용품 추천 리스트.</p>
+          </div>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./js/index.js"></script>
-  </body>
+    <section class="gallery">
+      <h2>갤러리</h2>
+      <div class="gallery-grid">
+        <div class="item a"><img src="./images/galley01.jpg" alt=""></div>
+        <div class="item b"><img src="./images/dog01.png" alt=""></div>
+        <div class="item c"><img src="./images/cat01.png" alt=""></div>
+        <div class="item d"><img src="./images/dog01.png" alt=""></div>
+        <div class="item e"><img src="./images/galley02.jpg" alt=""></div>
+        <div class="item f"><img src="./images/galley03.jpg" alt=""></div>
+        <div class="item g"><img src="./images/cat02.png" alt=""></div>
+        <div class="item h"><img src="./images/cat01.png" alt=""></div>
+        <div class="item i"><img src="./images/dog01.png" alt=""></div>
+      </div>
+    </section>
+    
+    <div class="sub_banner">
+      <a href="#none">
+        <img src="./images/banner-01.png" alt="">
+        <div class="content_wrap">
+        <div class="banner_content">
+            <p>펫프렌즈가 처음이라면?</p>
+            <p>신규 회원가입 혜택</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <section>슬라이드 카드 후기</section>
+    <div class="sub_banner">
+      <a href="#none">
+        <img src="./images/banner-02.png" alt="">
+        <div class="content_wrap">
+          <div class="banner_content">
+            <p>펫프렌즈가 처음이라면?</p>
+            <p>신규 회원가입 혜택</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <section>모집공고</section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <a href="index.html" class="footer-logo">
+          <img src="./images/logo.png" alt="펫프렌즈 로고" />
+        </a>
+        <ul class="footer-links">
+          <li><a href="#none">회사소개</a></li>
+          <li><a href="#none">이용약관</a></li>
+          <li><a href="#none">개인정보처리방침</a></li>
+          <li><a href="#none">이용안내</a></li>
+          <li><a href="#none">광고/제휴 문의</a></li>
+        </ul>
+        <div class="footer-social">
+          <a href="#none" aria-label="X"><i class="fa-brands fa-x-twitter"></i><span class="hidden">X</span></a>
+          <a href="#none" aria-label="Instagram"><i class="fa-brands fa-instagram"></i><span
+              class="hidden">Instagram</span></a>
+          <a href="#none" aria-label="Facebook"><i class="fa-brands fa-facebook"></i><span
+              class="hidden">Facebook</span></a>
+          <a href="#none" aria-label="YouTube"><i class="fa-brands fa-youtube"></i><span
+              class="hidden">YouTube</span></a>
+        </div>
+      </div>
+      <div class="footer-info">
+        <ul>
+          <li><strong>상호 : 펫프렌즈</strong></li>
+          <li><strong>대표 : 김경욱</strong></li>
+          <li><strong>메일 : ru0dn7@gmail.com</strong></li>
+          <li>
+            <strong>사업자등록번호 :</strong> 000-00-000
+            <a href="#" class="biz-lookup">사업자번호조회 &gt;</a>
+          </li>
+          <li><strong>통신판매업신고번호 :</strong> 00000000</li>
+          <li><strong>대표번호 :</strong> 0000-0000</li>
+          <li><strong>팩스번호 :</strong> 000-000-0000</li>
+          <li><strong>주소 : 서울시 강서구 </strong></li>
+        </ul>
+        <p class="copyright">Copyright © KKW</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
 </html>

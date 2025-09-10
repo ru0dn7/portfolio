@@ -1,4 +1,4 @@
-// <!-- scroll에 반응하는 header  -->
+// <!-- scroll에 반응하는 header ------------------------------------------------------------------  -->
   (function () {
     function setVhVar() {
       var vh = window.innerHeight * 0.01;
@@ -17,11 +17,15 @@
     window.addEventListener("scroll", toggleHeaderBg);
   })();
 
-// <!-- Swiper  -->
+
+
+
+// <!-- main-swiper ------------------------------------------------------------------  -->
   var swiper = new Swiper(".visual-swiper", {
     pagination: {
       el: ".swiper-pagination",
-      type: "fraction",
+      clickable: true,
+      type: "bullets",
     },
     navigation: {
       nextEl: ".swiper-button-next",
@@ -30,7 +34,9 @@
     loop: true,
   });
 
-// <!-- community -->
+
+
+// <!-- community-swiper ------------------------------------------------------------------ -->
   var swiper = new Swiper(".community-swiper", {
     pagination: {
       el: ".swiper-pagination",
@@ -40,9 +46,13 @@
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    autoHeight: true,
+    loop: true,
   });
 
-// <!-- category tabs -->
+
+
+// <!-- category tabs ------------------------------------------------------------------ -->
 (function () {
   var categoryInner = document.querySelector('.category-inner');
   if (!categoryInner) return;
