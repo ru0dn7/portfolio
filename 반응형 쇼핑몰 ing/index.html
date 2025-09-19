@@ -26,16 +26,40 @@
         <span class="hidden">펫프렌즈 로고</span>
       </a>
     </h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#company">회사소개</a></li>
+        <li><a href="#category">카테고리</a></li>
+        <li><a href="#products">인기상품</a></li>
+        <li><a href="#event">이벤트</a></li>
+        <li><a href="#cs">고객센터</a></li>
+      </ul>
+    </nav>
     <div class="utility">
-      <a href="#" class="ico"><i class="fa-solid fa-magnifying-glass"></i><span class="hidden">search</span></a>
-      <a href="#" class="log">로그인</a>
-      <a href="#" class="ico" id="btn_menu"><i class="fa-solid fa-bars"></i><span class="hidden">menu</span></a>
+      <a href="#" class="ico search-btn"><i class="fa-solid fa-magnifying-glass"></i><span class="hidden">search</span></a>
+      <a href="#" class="ico login-btn"><i class="fa-solid fa-user"></i><span class="hidden">login</span></a>
+      <a href="#" class="ico menu-btn" id="btn_menu"><i class="fa-solid fa-bars"></i><span class="hidden">menu</span></a>
     </div>
-
-    <!-- <nav>
-        <button class="btn_close"><span class="hidden">close</span></button>
-      </nav> -->
   </header>
+
+  <!-- 모바일 네비게이션 메뉴 -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+  <nav class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-header">
+      <img src="./images/logo.png" alt="펫프렌즈 로고" style="width: 100px;">
+      <button class="mobile-nav-close" id="mobileNavClose">
+        <i class="fa-solid fa-times"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-menu">
+      <li><a href="#company">회사소개</a></li>
+      <li><a href="#category">카테고리</a></li>
+      <li><a href="#products">인기상품</a></li>
+      <li><a href="#event">이벤트</a></li>
+      <li><a href="#cs">고객센터</a></li>
+    </ul>
+  </nav>
+
   <main>
     <div class="visual">
       <!-- Swiper -->
@@ -82,29 +106,11 @@
       </div>
     </div>
 
-    <!-- community section -->
-    <section>
-      <div class="section_title">
-        <h2>커뮤니티</h2>
-        <p>서브타이틀</p>
-      </div>
-      <div class="swiper community-swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="./images/1.png" alt=""></div>
-          <div class="swiper-slide"><img src="./images/2.png" alt=""></div>
-          <div class="swiper-slide"><img src="./images/3.png" alt=""></div>
-          <div class="swiper-slide"><img src="./images/4.png" alt=""></div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
 
     <section class="category">
       <div class="section_title">
         <h2>카테고리</h2>
-        <p>서브타이틀</p>
+        <p>우리 아이에게 딱 맞는 상품을 찾아보세요.</p>
       </div>
       <div class="category-inner">
         <ul>
@@ -145,27 +151,140 @@
           </div>
         </div>
       </div>
+      <div class="section-cta"><a href="#none" class="btn">바로가기</a></div>
     </section>
 
-    <section class="gallery">
+    <!-- products section -->
+    <section>
       <div class="section_title">
-        <h2>갤러리</h2>
-        <p>서브타이틀</p>
+        <h2>인기상품</h2>
+        <p>아이들이 먼저 찾는 인기 상품을 확인해보세요</p>
       </div>
-      <div class="gallery-grid">
-        <div class="item a"><img src="./images/galley01.jpg" alt=""></div>
-        <div class="item b"><img src="./images/dog01.png" alt=""></div>
-        <div class="item c"><img src="./images/cat01.png" alt=""></div>
-        <div class="item d"><img src="./images/dog01.png" alt=""></div>
-        <div class="item e"><img src="./images/galley02.jpg" alt=""></div>
-        <div class="item f"><img src="./images/galley03.jpg" alt=""></div>
-        <div class="item g"><img src="./images/cat02.png" alt=""></div>
-        <div class="item h"><img src="./images/cat01.png" alt=""></div>
-        <div class="item i"><img src="./images/dog01.png" alt=""></div>
+      <div class="swiper products-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="thumbnail">
+                <a href="#none"><img src="./images/product01.gif" alt="펫홀릭 튼튼 문어"></a>
+              </div>
+              <div class="description">
+                <strong class="name">펫홀릭 튼튼 문어</strong>
+                <p class="summary">겉과 속이 다른 반전매력 (블루/옐로)</p>
+                <div class="price-row">
+                  <span class="price-original">38,900원</span>
+                  <span class="sale-per">36%</span>
+                </div>
+                <div class="price-sale">25,000원</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="thumbnail">
+                <a href="#none"><img src="./images/product02.gif" alt="프리미엄 사료 A"></a>
+              </div>
+              <div class="description">
+                <strong class="name">프리미엄 사료 A</strong>
+                <p class="summary">기호성과 영양을 모두 잡은 베스트셀러</p>
+                <div class="price-row">
+                  <span class="price-original">49,900원</span>
+                  <span class="sale-per">20%</span>
+                </div>
+                <div class="price-sale">39,920원</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="thumbnail">
+                <a href="#none"><img src="./images/product03.jpeg" alt="천연 간식 세트"></a>
+              </div>
+              <div class="description">
+                <strong class="name">천연 간식 세트</strong>
+                <p class="summary">무첨가 원재료로 만든 건강 간식</p>
+                <div class="price-row">
+                  <span class="price-original">19,900원</span>
+                  <span class="sale-per">15%</span>
+                </div>
+                <div class="price-sale">16,915원</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="thumbnail">
+                <a href="#none"><img src="./images/product04.gif" alt="산책 하네스"></a>
+              </div>
+              <div class="description">
+                <strong class="name">산책 하네스</strong>
+                <p class="summary">통기성 좋은 메쉬 소재, 편안한 착용감</p>
+                <div class="price-row">
+                  <span class="price-original">32,000원</span>
+                  <span class="sale-per">25%</span>
+                </div>
+                <div class="price-sale">24,000원</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="thumbnail">
+                <a href="#none"><img src="./images/product05.gif" alt="고양이 스크래쳐"></a>
+              </div>
+              <div class="description">
+                <strong class="name">고양이 스크래쳐</strong>
+                <p class="summary">안정적인 구조, 교체 가능한 스크래치 보드</p>
+                <div class="price-row">
+                  <span class="price-original">27,900원</span>
+                  <span class="sale-per">30%</span>
+                </div>
+                <div class="price-sale">19,530원</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="thumbnail">
+                <a href="#none"><img src="./images/product06.jpg" alt="배변 패드 대용량"></a>
+              </div>
+              <div class="description">
+                <strong class="name">배변 패드 대용량</strong>
+                <p class="summary">순간 흡수, 역류 방지로 청결 유지</p>
+                <div class="price-row">
+                  <span class="price-original">22,000원</span>
+                  <span class="sale-per">18%</span>
+                </div>
+                <div class="price-sale">18,040원</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="thumbnail">
+                <a href="#none"><img src="./images/product07.png" alt="자동 급식기"></a>
+              </div>
+              <div class="description">
+                <strong class="name">자동 급식기</strong>
+                <p class="summary">스케줄 급식과 앱 연동으로 편리한 급여</p>
+                <div class="price-row">
+                  <span class="price-original">89,000원</span>
+                  <span class="sale-per">10%</span>
+                </div>
+                <div class="price-sale">80,100원</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
+      
+      <div class="section-cta"><a href="#none" class="btn">바로가기</a></div>
     </section>
 
-    <div class="sub_banner">
+    <!-- banner01 -->
+    <div class="sub_banner01">
       <a href="#none">
         <img src="./images/banner-01.png" alt="">
         <div class="content_wrap">
@@ -176,22 +295,12 @@
         </div>
       </a>
     </div>
-    <section>슬라이드 카드 후기</section>
-    <div class="sub_banner">
-      <a href="#none">
-        <img src="./images/banner-02.png" alt="">
-        <div class="content_wrap">
-          <div class="banner_content">
-            <p>펫프렌즈가 처음이라면?</p>
-            <p>신규 회원가입 혜택</p>
-          </div>
-        </div>
-      </a>
-    </div>
+
+    <!-- event section -->
     <section class="event">
       <div class="section_title">
         <h2>이벤트</h2>
-        <p>서브타이틀</p>
+        <p>놓치지 마세요! 최신 이벤트와 혜택</p>
       </div>
       <ul>
         <li>
@@ -215,8 +324,58 @@
           <p>알짜배기 상품만 모아모아, 특가로 준비했어요.</p>
         </li>
       </ul>
+      <div class="section-cta"><a href="#none" class="btn">바로가기</a></div>
     </section>
+
+    <!-- banner02 -->
+    <div class="sub_banner02">
+      <div href="#none" class="sub_banner02_bg">
+        <div class="content_wrap">
+          <div class="banner_content">
+            <p>함께 만들어가는 펫프렌즈</p>
+            <p>제휴 입점 및 기타문의</p>
+            <div class="section-cta"><a href="#none" class="btn">바로가기</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- gallery section -->
+    <section class="gallery">
+      <div class="section_title">
+        <h2>갤러리</h2>
+        <p>우리 아이의 순간을 기록한 갤러리</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="item a"><img src="./images/galley01.jpg" alt=""></div>
+        <div class="item b"><img src="./images/dog01.png" alt=""></div>
+        <div class="item c"><img src="./images/cat01.png" alt=""></div>
+        <div class="item d"><img src="./images/dog01.png" alt=""></div>
+        <div class="item e"><img src="./images/galley02.jpg" alt=""></div>
+        <div class="item f"><img src="./images/galley04.jpg" alt=""></div>
+        <div class="item g"><img src="./images/cat02.png" alt=""></div>
+        <div class="item h"><img src="./images/cat01.png" alt=""></div>
+        <div class="item i"><img src="./images/dog01.png" alt=""></div>
+      </div>
+      <div class="section-cta"><a href="#none" class="btn">바로가기</a></div>
+    </section>
+
   </main>
+
+  <!-- quick menu -->
+  <div class="quick-menu" id="quickMenu">
+    <a href="#none" class="quick-menu__item quick-menu__item--naver" aria-label="네이버톡 문의">
+      <i class="fa-solid fa-comments"></i>
+    </a>
+    <a href="#none" class="quick-menu__item quick-menu__item--kakao" aria-label="카카오톡 문의">
+      <i class="fa-solid fa-comment-dots"></i>
+    </a>
+    <button type="button" class="quick-menu__item quick-menu__item--top jsScrollUp" aria-label="맨 위로 이동">
+      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 11.001 6.208" aria-hidden="true">
+        <path d="M7.646,14.646a.5.5,0,0,0,.708.708ZM13,10l.354.354L13.707,10l-.353-.354ZM8.354,4.646a.5.5,0,0,0-.708.708Zm0,10.708,5-5-.708-.708-5,5Zm5-5.708-5-5-.708.708,5,5Z" transform="translate(-4.499 13.707) rotate(-90)" fill="#262626"></path>
+      </svg>
+    </button>
+  </div>
 
   <footer class="site-footer">
     <div class="footer-inner">
@@ -236,7 +395,7 @@
           <a href="#none" aria-label="Instagram"><i class="fa-brands fa-instagram"></i><span
               class="hidden">Instagram</span></a>
           <a href="#none" aria-label="Facebook"><i class="fa-brands fa-facebook"></i><span
-              class="hidden">Facebook</span></a>`
+              class="hidden">Facebook</span></a>
           <a href="#none" aria-label="YouTube"><i class="fa-brands fa-youtube"></i><span
               class="hidden">YouTube</span></a>
         </div>
