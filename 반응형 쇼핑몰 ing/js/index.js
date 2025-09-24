@@ -22,9 +22,13 @@
 
     // 초기 사이즈 설정
     function setHeight() {
-      const width = window.innerWidth; // 현재 화면의 가로 길이
-      const height = (width * 9) / 16; // 16:9 비율로 계산된 세로 길이
-      box.style.height = `${height}px`; // 높이를 동적으로 설정
+      const width = window.innerWidth;
+      // 폭 구간별로 비율 조정: 데스크톱 16:9, 태블릿 3:2, 모바일 4:3
+      let ratioW = 2, ratioH = 1;      if (width <= 768) {
+        ratioW = 1; ratioH = 1;
+      }
+      const height = (width * ratioH) / ratioW;
+      box.style.height = `${height}px`;
     }
 
     // 페이지 로드 시 한 번 실행
@@ -32,6 +36,19 @@
 
     // 창 크기 변경 시마다 실행
     window.addEventListener("resize", setHeight);
+
+// <!-- AOS init ------------------------------------------------------------------  -->
+  (function () {
+    if (window.AOS) {
+      AOS.init({
+        duration: 700,
+        easing: 'ease-out-cubic',
+        once: true,
+        offset: 80,
+        mirror: false
+      });
+    }
+  })();
 
 // <!-- main-swiper ------------------------------------------------------------------  -->
   var swiper = new Swiper(".visual-swiper", {
@@ -45,6 +62,10 @@
       prevEl: ".swiper-button-prev",
     },
     loop: true,
+    autoplay: {
+      delay: 3000,
+    },
+    effect: "fade",
   });
 
 
@@ -80,7 +101,11 @@
         slidesPerView: 4,
         spaceBetween: 20,
       }
+    },
+    autoplay: {
+      delay:3000,
     }
+
   });
 
 

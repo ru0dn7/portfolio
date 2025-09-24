@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="./css/common.css" />
   <link rel="stylesheet" href="./css/index.css" />
 
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
   <!-- 폰트어썸 CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
@@ -66,7 +69,10 @@
       <div class="swiper visual-swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="./images/visual1.jpg" alt="" />
+            <picture>
+              <source srcset="./images/visual01_tb.png" media="(max-width: 768px)">
+              <img src="./images/visual01.png" alt="" />
+            </picture>
             <div class="slide-caption">
               <p class="main-title">
                 <span class="line1">
@@ -80,7 +86,10 @@
           </div>
 
           <div class="swiper-slide">
-            <img src="./images/visual1.jpg" alt="" />
+            <picture>
+              <source srcset="./images/visual02_tb.png" media="(max-width: 768px)">
+              <img src="./images/visual02.png" alt="" />
+            </picture>
             <div class="slide-caption">
               <p class="main-title">
                 <span class="line1">
@@ -94,7 +103,10 @@
           </div>
 
           <div class="swiper-slide">
-            <img src="./images/visual1.jpg" alt="" />
+            <picture>
+              <source srcset="./images/visual03_tb.png" media="(max-width: 768px)">
+              <img src="./images/visual03.png" alt="" />
+            </picture>
             <div class="slide-caption">
               <p class="main-title"><span class="highlight">펫 라이프스타일</span>의 시작, 펫프렌즈</p>
             </div>
@@ -107,7 +119,7 @@
     </div>
 
 
-    <section class="category">
+    <section class="category" data-aos="fade-up" data-aos-offset="120">
       <div class="section_title">
         <h2>카테고리</h2>
         <p>우리 아이에게 딱 맞는 상품을 찾아보세요.</p>
@@ -120,21 +132,21 @@
         </ul>
         <!-- 1번째 탭 -->
         <div class="category-box on">
-          <img src="./images/cat01.png" alt="">
+          <img src="./images/category01.png" alt="">
           <div class="right-box">
-            <img src="./images/galley01.jpg" alt="">
-            <img src="./images/galley02.jpg" alt="">
-            <p class="tit">BTS TOUR IN SEOUL</p>
-            <p>이제는 성지가 되어버린 멤버들이 데뷔 전 갔던 식당부터 TRIPKO만의 스페셜 코스인 '하이브 사옥 투어' 등 유튜브</p>
+            <img src="./images/category02.png" alt="">
+            <img src="./images/category03.png" alt="">
+            <p class="tit">프리미엄 사료 추천</p>
+            <p>다양한 연령대와 입맛에 맞는 프리미엄 사료를 만나보세요. 신선한 재료로 제조되어 반려동물의 건강을 지켜줍니다.</p>
           </div>
         </div>
 
         <!-- 2번째 탭 -->
         <div class="category-box">
-          <img src="./images/dog01.png" alt="">
+          <img src="./images/category04.png" alt="">
           <div class="right-box">
-            <img src="./images/galley02.jpg" alt="">
-            <img src="./images/galley01.jpg" alt="">
+            <img src="./images/category05.png" alt="">
+            <img src="./images/category06.png" alt="">
             <p class="tit">간식 베스트 TOP</p>
             <p>우리 아이가 좋아하는 건강한 간식 모음. 기호성과 영양을 동시에 잡은 베스트셀러를 만나보세요.</p>
           </div>
@@ -142,10 +154,10 @@
 
         <!-- 3번째 탭 -->
         <div class="category-box">
-          <img src="./images/cat01.png" alt="">
+          <img src="./images/category07.png" alt="">
           <div class="right-box">
-            <img src="./images/galley01.jpg" alt="">
-            <img src="./images/galley02.jpg" alt="">
+            <img src="./images/category08.png" alt="">
+            <img src="./images/category09.png" alt="">
             <p class="tit">반려동물 용품 추천</p>
             <p>산책부터 실내생활까지 필수 용품을 한자리에. 프리미엄 하네스, 장난감, 배변용품 추천 리스트.</p>
           </div>
@@ -160,7 +172,7 @@
         <h2>인기상품</h2>
         <p>아이들이 먼저 찾는 인기 상품을 확인해보세요</p>
       </div>
-      <div class="swiper products-swiper">
+      <div class="swiper products-swiper" data-aos="fade-up" data-aos-offset="120">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="product-card">
@@ -284,9 +296,10 @@
     </section>
 
     <!-- banner01 -->
-    <div class="sub_banner01">
-      <a href="#none">
+    <div class="sub_banner01" data-aos="fade-up" data-aos-offset="160">
+      <a href="#none" data-aos="zoom-in" data-aos-offset="140">
         <img src="./images/banner-01.png" alt="">
+        <img src="./images/banner-01_tb.png" alt="">
         <div class="content_wrap">
           <div class="banner_content">
             <p>펫프렌즈가 처음이라면?</p>
@@ -297,28 +310,28 @@
     </div>
 
     <!-- event section -->
-    <section class="event">
+    <section class="event" data-aos="fade-up" data-aos-offset="140">
       <div class="section_title">
         <h2>이벤트</h2>
         <p>놓치지 마세요! 최신 이벤트와 혜택</p>
       </div>
       <ul>
-        <li>
+        <li data-aos="fade-up" data-aos-delay="0">
           <img src="./images/img01.png" alt="">
           <p>최적의 맘마를 위한<br><span>맘마샘플</span></p>
           <p>아이가 잘 먹는 사료&간식을 찾아보세요.</p>
         </li>
-        <li>
+        <li data-aos="fade-up" data-aos-delay="100">
           <img src="./images/img02.png" alt="">
           <p>왕 큰 멍멍이를 위한<br><span>중대형견 아이템</span></p>
           <p>왕크니까 왕귀여운 대형견 멍멍이들을 위한 꿀템</p>
         </li>
-        <li>
+        <li data-aos="fade-up" data-aos-delay="200">
           <img src="./images/img03.png" alt="">
           <p>써봐야 아니까!<br><span>심쿵 체험단</span></p>
           <p>선착순으로 사용해보시고 후기를 남겨주세요.</p>
         </li>
-        <li>
+        <li data-aos="fade-up" data-aos-delay="300">
           <img src="./images/img04.png" alt="">
           <p>한정수량 초특가!<br><span>창고 대방출!</span></p>
           <p>알짜배기 상품만 모아모아, 특가로 준비했어요.</p>
@@ -341,21 +354,21 @@
     </div>
 
     <!-- gallery section -->
-    <section class="gallery">
+    <section class="gallery" data-aos="fade-up" data-aos-offset="120">
       <div class="section_title">
         <h2>갤러리</h2>
         <p>우리 아이의 순간을 기록한 갤러리</p>
       </div>
       <div class="gallery-grid">
-        <div class="item a"><img src="./images/galley01.jpg" alt=""></div>
-        <div class="item b"><img src="./images/dog01.png" alt=""></div>
-        <div class="item c"><img src="./images/cat01.png" alt=""></div>
-        <div class="item d"><img src="./images/dog01.png" alt=""></div>
-        <div class="item e"><img src="./images/galley02.jpg" alt=""></div>
-        <div class="item f"><img src="./images/galley04.jpg" alt=""></div>
-        <div class="item g"><img src="./images/cat02.png" alt=""></div>
-        <div class="item h"><img src="./images/cat01.png" alt=""></div>
-        <div class="item i"><img src="./images/dog01.png" alt=""></div>
+        <div class="item a" data-aos="zoom-in" data-aos-delay="0"><img src="./images/galley01.jpg" alt=""></div>
+        <div class="item b" data-aos="zoom-in" data-aos-delay="50"><img src="./images/dog01.png" alt=""></div>
+        <div class="item c" data-aos="zoom-in" data-aos-delay="100"><img src="./images/cat01.png" alt=""></div>
+        <div class="item d" data-aos="zoom-in" data-aos-delay="150"><img src="./images/dog01.png" alt=""></div>
+        <div class="item e" data-aos="zoom-in" data-aos-delay="200"><img src="./images/galley02.jpg" alt=""></div>
+        <div class="item f" data-aos="zoom-in" data-aos-delay="250"><img src="./images/galley04.jpg" alt=""></div>
+        <div class="item g" data-aos="zoom-in" data-aos-delay="300"><img src="./images/cat02.png" alt=""></div>
+        <div class="item h" data-aos="zoom-in" data-aos-delay="350"><img src="./images/cat01.png" alt=""></div>
+        <div class="item i" data-aos="zoom-in" data-aos-delay="400"><img src="./images/dog01.png" alt=""></div>
       </div>
       <div class="section-cta"><a href="#none" class="btn">바로가기</a></div>
     </section>
@@ -420,6 +433,8 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="./js/index.js"></script>
 
 </body>

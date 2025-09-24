@@ -1,3 +1,16 @@
+/* typography scale */
+:root {
+  --fs-display: clamp(28px, 6vw, 56px);
+  --fs-h1: clamp(24px, 4.8vw, 44px);
+  --fs-h2: clamp(20px, 3.8vw, 36px);
+  --fs-h3: clamp(18px, 3.2vw, 28px);
+  --fs-body: clamp(14px, 1.8vw, 16px);
+  --fs-small: clamp(12px, 1.6vw, 14px);
+}
+
+html { font-size: 16px; }
+body { font-size: var(--fs-body); line-height: 1.6; }
+
 .hidden {
   position: absolute !important;
   width: 1px;
@@ -56,14 +69,7 @@ header.scrolled h1 a img {width: 70%; transition: all .5s;}
   padding: 0;
 }
 
-.main-nav a {
-  color: #333;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 20px;
-  transition: color 0.2s ease;
-  position: relative;
-}
+.main-nav a { color: #333; text-decoration: none; font-weight: 500; font-size: clamp(16px, 2.2vw, 20px); transition: color 0.2s ease; position: relative; }
 
 .main-nav a:hover {
   color: #ff4081;
@@ -115,18 +121,18 @@ header.scrolled h1 a img {width: 70%; transition: all .5s;}
 .mobile-nav {
   position: fixed;
   top: 0;
-  left: -100%;
+  right: -100%;
   width: 280px;
   height: 100vh;
   background: #fff;
   z-index: 1002;
-  transition: left 0.3s ease;
+  transition: right 0.3s ease;
   box-shadow: 2px 0 10px rgba(0,0,0,0.1);
   overflow-y: auto;
 }
 
 .mobile-nav.is-open {
-  left: 0;
+  right: 0;
 }
 
 .mobile-nav-header {
@@ -155,15 +161,7 @@ header.scrolled h1 a img {width: 70%; transition: all .5s;}
   border-bottom: 1px solid #f5f5f5;
 }
 
-.mobile-nav-menu a {
-  display: block;
-  padding: 20px;
-  color: #333;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-  transition: background-color 0.2s ease;
-}
+.mobile-nav-menu a { display: block; padding: 20px; color: #333; text-decoration: none; font-size: clamp(16px, 2.4vw, 18px); font-weight: 500; transition: background-color 0.2s ease; }
 
 .mobile-nav-menu a:hover {
   background: #ff4081;
@@ -290,11 +288,7 @@ header.scrolled h1 a img {width: 70%; transition: all .5s;}
 .site-footer .footer-social a:hover {
   color: #ff4081;
 }
-.site-footer .footer-info {
-  padding-top: 24px;
-  font-size: 14px;
-  line-height: 1.8;
-}
+.site-footer .footer-info { padding-top: 24px; font-size: var(--fs-small); line-height: 1.8; }
 .site-footer .footer-info ul {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
